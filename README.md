@@ -16,15 +16,19 @@ https://app.box.com/s/jwm5jshe8cubbqgbc3lruppcd8hm0kq3
 
 # Camera IDs
 2701: Woodlands Causeway Towards Johor
+
 <img src=2701_1200_20200320120200_0331e7.jpg width=400>
 
 2702: Woodlands Checkpoint (Towards BKE)
+
 <img src=2702_1200_20200320120300_fb2904.jpg width=400>
 
 4703: Tuas Second Link
+
 <img src=4703_1200_20200320120200_4b0020.jpg width=400>
 
 4713: Tuas Checkpoint
+
 <img src=4713_1200_20200320120200_3a317e.jpg width=400>
 
 # Background
