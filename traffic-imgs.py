@@ -31,7 +31,7 @@ def savePic(ImageUrl, retry_count = 0):
     else:
         print(ImageUrl.split("/")[-1], "failed. Giving up.")
 
-url = "https://www.onemotoring.com.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html"
+url = "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html"
 
 Cameras = {'4703': 'Tuas Second Link',
            '4713': 'Tuas Checkpoint',
@@ -43,7 +43,7 @@ time_interval = 55 # in seconds
 while True:
     print("getting data...")
     r = requests.get(url=url)
-    images = BeautifulSoup(r.content, "lxml").find_all(src = re.compile("mytransport"))    # get the image links
+    images = BeautifulSoup(r.content, "lxml").find_all(src = re.compile("datamall"))    # get the image links
 
     print("Image links obtained. Length", len(images))
 
