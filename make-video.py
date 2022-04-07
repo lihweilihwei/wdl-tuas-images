@@ -6,7 +6,7 @@ Created on Thu Mar 19 21:01:15 2020
 """
 
 from PIL import Image, ImageDraw, ImageFont
-import ffmpeg, os
+import os, sys
 import pandas as pd
 
 os.chdir(os.path.dirname(sys.argv[0]))    # set the working directory to where the .py script is
