@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 import ffmpeg, os
 import pandas as pd
 
-os.chdir("C:/Users/yeowl/Desktop/wdl-tuas-images")
+os.chdir(os.path.dirname(sys.argv[0]))    # set the working directory to where the .py script is
 
 def drawText(image, text, x_buffer=5, y_buffer=5):
     (x, y) = image.size
@@ -44,6 +44,7 @@ image_list_df = pd.DataFrame({"name": image_list,
 image_list_df["count"] = image_list_df.groupby("cameraID").cumcount() + 1    # sequential order so that ffmpeg can turn it into a video
 image_list_df["out_file"] = image_list_df["cameraID"].astype(str) + "/" + image_list_df["count"].astype(str) + ".jpg"
 
+# open images, add text box with datetime string, save it
 for index, row in image_list_df.iterrows():
     print(row["name"])
     try:
